@@ -1,0 +1,13 @@
+run following on terminal
+
+python
+
+>> import load_data
+
+>> import reduce_features
+
+>> X_global,y_global=load_data.load_data(downsampleBy=4,databases=4)
+
+>> X_global_reduce,y_global_reduce= reduce_features.reduce_features(X_global,y_global,number_of_features=500)
+
+>> execfile('deeplearning.py')
